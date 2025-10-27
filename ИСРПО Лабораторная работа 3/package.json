@@ -1,0 +1,40 @@
+{
+    "name": "coder-helper",
+    "displayName": "Coder Helper",
+    "version": "1.0.0",
+    "engines": {"vscode": "^1.60.0"},
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "helper.commentCode",
+                "title": "Закомментировать код"
+            },
+            {
+                "command": "helper.timestamp",
+                "title": "Вставить время"
+            },
+            {
+                "command": "helper.countLines", 
+                "title": "Посчитать строки"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "helper.commentCode",
+                "key": "f2",
+                "mac": "f2"
+            },
+            {
+                "command": "helper.timestamp",
+                "key": "f3", 
+                "mac": "f3"
+            },
+            {
+                "command": "helper.countLines",
+                "key": "f4",
+                "mac": "f4"
+            }
+        ]
+    }
+}
